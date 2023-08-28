@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body style="background-color:greenyellow;margin-left: 40%;">
+    <h3 style="color: red; margin-left: 5%;">Personal details </h3>
+    <table>
+        <form>
+            <tr><label for="name"> Name : </label></tr>
+            <tr><input type="text" name="" id="name" required> </tr><br><br>
+
+            <tr><label for="password">Password : </label></tr>
+            <tr><input type="password" name="" id="password"> </tr><br><br>
+
+            <tr><label for="email">Email Id : </label></tr>
+            <tr><input type="email" name="" id="email" required> </tr><br><br>
+
+
+            Gender -
+
+            Male <input type="radio" name="Gender">
+            Female <input type="radio" name="Gender"><br><br>
+
+            <tr><label for="contact">Contact : </label></tr>
+            <tr><input type="tel" name="" id="contact" maxlength="10"> </tr><br><br>
+
+            <h3 style="color: red; margin-left: 5%;">Educational Qualification </h3>
+
+            <tr><label for="degree">Degree : </label>
+                <select id="degree">
+                    <option value="">--Select your Degree --</option>
+                    <option value="">BE</option>
+                    <option value="">BBA</option>
+                    <option value="">MBA</option>
+                    <option value="">BCA</option>
+            </tr></select><br><br>
+
+            <tr><label for="engineering">Engineering : </label>
+
+                <input list="engineering" name="engineering">
+                <datalist id="engineering">
+                    <option value="Computer">
+                    <option value="ENTC">
+                    <option value="Petroleum">
+                    <option value="Civil">
+                    <option value="Mechnical">
+                </datalist><br><br>
+            </tr>
+            Hobbies -
+
+            Playing Chess <input type="checkbox" name="chess">
+            Reading Books<input type="checkbox" name="Reading"><br><br>
+
+            <h3 style="color: red; margin-left: 5%;">Address </h3>
+            <tr><textarea name="address" rows="5" cols="40">
+                </textarea></tr><br> <br>
+
+            <tr><label for="upload file">Attach Resume : </label>
+                <input type="file" name="upload file" id="upload file">
+
+            </tr><br><br>
+            <tr> <input type="submit" name="submit" id="submit" style="font-size: 30; margin-left: 5%;color: crimson;">
+            </tr>
+
+
+
+
+        </form>
+    </table>
+</body>
+
+</html>
